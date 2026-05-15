@@ -5,21 +5,21 @@
 class Yips < Formula
   desc "Terminal client for The Yips golf stats tracker"
   homepage "https://theyips.app"
-  version "0.0.8"
+  version "0.0.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/undeadC0rp/theyips/releases/download/v0.0.8/yips_darwin_amd64.tar.gz"
-      sha256 "54d9319d1ce938329d9a600b2cd2be582d8d3b11028970fcfa4ff6582d9e59f1"
+      url "https://github.com/undeadC0rp/theyips/releases/download/v0.0.9/yips_darwin_amd64.tar.gz"
+      sha256 "091f350f1fcfd8affcdfd5ca994d67ffc2cd8ee05be16a528455f0fb8bea3a7a"
 
       define_method(:install) do
         bin.install "yips"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/undeadC0rp/theyips/releases/download/v0.0.8/yips_darwin_arm64.tar.gz"
-      sha256 "c97387b1da4f24c7bd6cc593aa6aef2c6e154e55cca85116f0d9ba2211cb94ce"
+      url "https://github.com/undeadC0rp/theyips/releases/download/v0.0.9/yips_darwin_arm64.tar.gz"
+      sha256 "9e472dc531d6aa29dabe22599230c364eab08a2b222488c5ce8e86de802e0e74"
 
       define_method(:install) do
         bin.install "yips"
@@ -29,15 +29,15 @@ class Yips < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/undeadC0rp/theyips/releases/download/v0.0.8/yips_linux_amd64.tar.gz"
-      sha256 "2756c5e24f5d7d14dcebabe1156d1cd1e23dbee0ae5995efa104b49b8c8891f0"
+      url "https://github.com/undeadC0rp/theyips/releases/download/v0.0.9/yips_linux_amd64.tar.gz"
+      sha256 "14ca7486e673ec2a73fbdd21f960d9fe5e5d5527fbce743a403bb5d276bd841f"
       define_method(:install) do
         bin.install "yips"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/undeadC0rp/theyips/releases/download/v0.0.8/yips_linux_arm64.tar.gz"
-      sha256 "abd736889df6631265485bf14845a82e3fd4ffdc97b962aa91949b85727c4615"
+      url "https://github.com/undeadC0rp/theyips/releases/download/v0.0.9/yips_linux_arm64.tar.gz"
+      sha256 "3d6f34bfd348924a2d72358f57bed5f3da210126e21b63267709bd6d8dbe8a62"
       define_method(:install) do
         bin.install "yips"
       end
