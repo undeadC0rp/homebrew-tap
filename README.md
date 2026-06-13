@@ -5,9 +5,11 @@ Homebrew tap for [The Yips](https://theyips.app) — a golf stats tracker focuse
 ## Install
 
 ```sh
-brew tap undeadC0rp/tap
-brew install yips
+brew install --cask undeadC0rp/tap/yips
 ```
+
+> `yips` is distributed as a Homebrew **cask** (macOS only). Linux users can
+> install via `go install github.com/undeadC0rp/theyips-cli/cmd/yips@latest`.
 
 ## Tools
 
