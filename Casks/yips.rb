@@ -3,28 +3,23 @@ cask "yips" do
   version "0.21.0"
 
   on_macos do
-    on_intel do
-      sha256 "fc4afabbe109aed12a6944e9c65306951e6f1a0eff45cfaa36000ab4c95d4da7"
-      url "https://github.com/undeadC0rp/theyips/releases/download/v#{version}/yips_darwin_amd64.tar.gz",
-        verified: "github.com/undeadC0rp/theyips-cli/"
-    end
     on_arm do
-      sha256 "bb79d66ca6e46929f414ccb9146aa961b334f74a0033c166836fc138e267d62b"
-      url "https://github.com/undeadC0rp/theyips/releases/download/v#{version}/yips_darwin_arm64.tar.gz",
-        verified: "github.com/undeadC0rp/theyips-cli/"
+      sha256 "e01d859fc3f33e3ce36aeca956dc82486c6a52b4c8e6b88197675782cc968555"
+      url "https://github.com/undeadC0rp/theyips/releases/download/v#{version}/yips_darwin_arm64.tar.gz"
+    end
+    on_intel do
+      sha256 "83f294eb06f40caf089b5c4b70fed33f24ce7fcc72010ac6d50f9d6ef353d1bf"
+      url "https://github.com/undeadC0rp/theyips/releases/download/v#{version}/yips_darwin_amd64.tar.gz"
     end
   end
-
   on_linux do
-    on_intel do
-      sha256 "0d9560e44bbe4141832d068c2a651f225128a7e51f6ef67d9bb54c8212efa045"
-      url "https://github.com/undeadC0rp/theyips/releases/download/v#{version}/yips_linux_amd64.tar.gz",
-        verified: "github.com/undeadC0rp/theyips-cli/"
-    end
     on_arm do
-      sha256 "bd078830f69f125214d767bee3e80c7b5671657b29f2f431834bb3b7d0351c4b"
-      url "https://github.com/undeadC0rp/theyips/releases/download/v#{version}/yips_linux_arm64.tar.gz",
-        verified: "github.com/undeadC0rp/theyips-cli/"
+      sha256 "bebc4ffdb64b9e6af0daa021477fb975efc9dab4736249c2afcd51486f09eb8a"
+      url "https://github.com/undeadC0rp/theyips/releases/download/v#{version}/yips_linux_arm64.tar.gz"
+    end
+    on_intel do
+      sha256 "d064ed78efa855a37cca41c8d1fd2813f02cc9189b1dd393c127048f86228b4b"
+      url "https://github.com/undeadC0rp/theyips/releases/download/v#{version}/yips_linux_amd64.tar.gz"
     end
   end
 
@@ -45,5 +40,4 @@ cask "yips" do
   end
 
   # No zap stanza required
-
 end
